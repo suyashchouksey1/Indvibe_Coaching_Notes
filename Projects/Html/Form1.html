@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <form action="Submitted">
+            <h1> Login Form </h1>
+
+            <!-- Label & Input -->
+            <label for="user">Username :-)</label>
+            <input type="user" id="user" placeholder="Enter Username"><br><br>
+            <label for="pass">Password :-)</label>
+            <input type="password" id="pass" placeholder="Enter Password"><br><br>
+
+            <!-- CheckBox -->
+            <label for="check"> I am 18+ </label>
+            <input type="checkbox" id="check" checked><br><br>
+
+            <!-- Radio Button -->
+            <div>
+                Gender :-) <br>
+                <label for="Male">Male</label>
+                <input type="radio" name="Gender" id="Male">
+
+                <label for="Female">Female</label>
+                <input type="radio" name="Gender" id="Female">
+
+                <label for="Other">Other</label>
+                <input type="radio" name="Gender" id="Other">
+            </div><br>
+
+            <!-- DropDown -->
+            <div>
+                <label for="Profession"> Profession :-) </label>
+                <select name="Profession" id="Profession">
+                    <option value="">Select an option </option>
+                    <option value="Stu">Student</option>
+                    <option value="Se.Dev">Senior Developer</option>
+                    <option value="jr.Dev">Junior Developer</option>
+                </select>
+            </div><br>
+
+            <!-- Button -->
+            <button>SUBMIT</button><br><br>
+            <hr>
+        </form>
+
+        <!-- Actions  -->
+        <form action="https://www.google.com/search">
+            <input type="text" placeholder="Search in" name="q">
+            <button>Google</button>
+        </form>
+        <br>
+        <form action="https://www.youtube.com/results">
+            <input type="text" placeholder="Search in" name="search_query">
+            <button>Youtube</button>
+        </form>
+    </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+<!--                
+/                                    Day-1 HTML 11/03/25
+    What is HTML 
+>>  Html is used to show the documatation on the web browser. 
+
+    how many types of tag are there in html  
+>>  2 types of tag are there in html 
+    1. pair : Both opening and closing tag
+    <p> </p> 
+    <div> </div>
+
+    2. unpair : only opening tag
+    <br />
+    <hr />
+    <img />
+
+    heading tag 
+>>  <h1>hyy</h1>
+    <h2>hyy</h2>
+    <h3>hyy</h3>
+    <h4>hyy</h4>
+    <h5>hyy</h5>
+    <h6>hyy</h6>
+    <h7>hyy</h7>
+        hyy
+    <p> hyy</p> 
+
+    Marquee Tag 
+>>  <marquee scrollamount="30px" behavior="slide"> </marquee>  >> This tag is used to slide the content
+
+    html element 
+>>  which having start tag , end tag and some of content.
+    <p> sakshi </p>  >> This is called an element
+
+    Use of tags
+>>  <b> </b>            >> To Bold the Text
+    <strong> </strong>  >> To Bold the Text on Priority Basis (Important)
+    <i> </i>            >> Change the font to italic
+    <em> </em>          >> Change the font to italic in emphasize
+    <br>                >> To break a line
+    <hr>                >> To give Hirizontal line
+    <mark> </mark>      >> To highlight the text
+ 
+    Html Attribute
+>>  which show the additional property of html element
+    href, src, alt, style 
+    for Ex
+    <a href="home.html"> Home </a> 
+    <img src="flower.jpg" alt="sakshi" /> 
+    <p style="color: red"> Lorem ipsum dolor sit </p>
+
+
+
+
+
+
+
+/                                     Day-2 List & Tables 12/03/25 
+3 types of list
+>> 1. Order list
+   2. UnOrder list
+   3. Declerative list
+
+<h3>Order list</h3>
+<ol type="i">
+    <li>name</li>
+    <li>id</li>
+    <li>city</li>
+    <li>salary</li>
+    <li>age</li>
+</ol>
+
+<h3>Unorder list</h3>
+<ul type="circle">
+    <li> id </li>
+    <li> name </li>
+    <li> age </li>
+    <li> city </li>
+    <li> salary </li>
+</ul>
+
+<h3>Declerative list</h3>
+<dt> Introduction</dt>
+<dd> Lorem ipsum dolor, sit amet consectetur </dd>
+
+
+
+<h2> Table in html </h2>
+<table border="1" cellspacing="30px">
+    <tr>
+        <th>ID</th>
+        <th>age</th>
+        <th>city</th>
+        <th>salary</th>
+        <th>name</th>
+    </tr>
+    <tr>
+        <td>101</td>
+        <td>23</td>
+        <td>bhopal</td>
+        <td>23456</td>
+        <td>naina</td>
+    </tr>
+    <tr>
+        <td>101</td>
+        <td>23</td>
+        <td>bhopal</td>
+        <td>23456</td>
+        <td>naina</td>
+    </tr>
+    <tr>
+        <td>101</td>
+        <td>23</td>
+        <td>bhopal</td>
+        <td>23456</td>
+        <td>naina</td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/                                     Day-3 Form 13/03/25 1:30 PM
+&nbsp; >> For Giving Space
+
+<fieldset> >> To set border of form without using border attribute
+  <from>
+
+    <label> Name </label>
+    <input type="text" placeholder="enter the name" name="name" /> <br> <br>
+
+    <label>Contact</label>
+    <select>
+      <option></option>
+      <option>+91 India</option>
+      <option>+81 Iran</option>
+      <option>+89 pakistan</option>
+    </select>
+    <input /> <br><br>
+
+    <label>Upload your resume</label>
+    <input type="file" /> <br><br>
+
+    <label>Date</label>
+    <input type="date" /> <br><br>
+
+    <label>Time</label>
+    <input type="time" /> <br><br>
+
+    <label>Gender</label>
+    <input type="radio" name="gender" />Male
+    <input type="radio" name="gender" />Female
+    <input type="radio" name="gender" />other <br><br>
+
+    <label>Hobbies</label>
+    <input type="checkbox" />cricket
+    <input type="checkbox" />Dance
+    <input type="checkbox" />coocking <br><br>
+
+    <label>Feedback</label>
+    <textarea rows="5" cols="5"></textarea> <br><br>
+
+    <button>Submit</button>
+
+  </from>
+</fieldset>
+
+
+
+
+
+
+/                                     Day-3 CSS 13/03/25 2:00 PM
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> CSS </title>
+  <style type="text/css">
+    div {
+      background-color: skyblue;
+      color: black;
+      width: 400px;
+      border: 10px solid green;
+      padding: 50px;
+      margin: 20px;
+      outline: 5px dashed red;      >> Outside of Border 
+    }
+
+    img:hover { opacity: 0.7; }     >> Opacity is use to make something transparent */
+
+/                         CSS for Table
+    table,
+    th,td { border: 1px solid green; }
+
+    table { border-collapse: collapse; width: 100% }   >> Collapse is used to Combined table lines
+
+    td, th { text-align: center; padding: 6px;}
+
+/                         CSS for Order List & Unorder list
+    ul {
+      list-style-type: circle; list-style-type: none; margin: 0; padding: 0; }
+
+    ol { list-style-type: lower-roman; }
+
+  </style>
+</head>
+
+<body>
+
+/                            Box Model
+  <div>
+    Types of CSS
+      1.internal
+      2.external
+      3.inline
+    CSS Selector
+      1.Id
+      2.Class
+      3.Universal
+  </div>
+
+/                              Opacity
+  <img
+    src="https://cdn.pixelbin.io/v2/dummy-cloudname/original/erasebg_assets/feature_page/header/Car_BgWidgetImage.png">
+
+
+/                              Table
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+      <th>Salary</th>
+    </tr>
+    <tr>
+      <td>Suyash</td>
+      <td>23</td>
+      <td>Indore</td>
+      <td>38463</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>31</td>
+      <td>Bhopal</td>
+      <td>46413</td>
+    </tr>
+    <tr>
+      <td>Satyam</td>
+      <td>33</td>
+      <td>Agra</td>
+      <td>85463</td>
+    </tr>
+  </table>
+
+/                     Order & Unorder List               
+  <ul>
+    <li>home</li>
+    <li>home</li>
+    <li>home</li>
+  </ul>
+  <ol>
+    <li>home</li>
+    <li>home</li>
+    <li>home</li>
+  </ol>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
