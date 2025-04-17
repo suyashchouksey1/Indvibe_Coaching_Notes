@@ -1,5 +1,5 @@
 <!--                
-/                                    Day-1 HTML 11/03/25
+//                                    Day-1 HTML 11/03/25
     What is HTML 
 >>  Html is used to show the documatation on the web browser. 
 
@@ -15,15 +15,15 @@
     <img />
 
     heading tag 
->>  <h1>hyy</h1>
-    <h2>hyy</h2>
-    <h3>hyy</h3>
-    <h4>hyy</h4>
-    <h5>hyy</h5>
-    <h6>hyy</h6>
-    <h7>hyy</h7>
+>>  <h1> hyy </h1>
+    <h2> hyy </h2>
+    <h3> hyy </h3>
+    <h4> hyy </h4>
+    <h5> hyy </h5>
+    <h6> hyy </h6>
+    <h7> hyy </h7>
         hyy
-    <p> hyy</p> 
+    <p> hyy </p> 
 
     Marquee Tag 
 >>  <marquee scrollamount="30px" behavior="slide"> </marquee>  >> This tag is used to slide the content
@@ -52,10 +52,7 @@
 
 
 
-
-
-
-/                                     Day-2 List & Tables 12/03/25 
+//                                     Day-2 List & Tables 12/03/25 
 3 types of list
 >> 1. Order list
    2. UnOrder list
@@ -120,21 +117,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/                                     Day-3 Form 13/03/25 1:30 PM
+//                                     Day-3 Form 13/03/25 1:30 PM
 &nbsp; >> For Giving Space
 
 <fieldset> >> To set border of form without using border attribute
@@ -183,8 +166,7 @@
 
 
 
-
-/                                     Day-3 CSS 13/03/25 2:00 PM
+//                                     Day-3 CSS 13/03/25 2:00 PM
 <!DOCTYPE html>
 <html>
 <head>
@@ -201,29 +183,22 @@
       margin: 20px;
       outline: 5px dashed red;      >> Outside of Border 
     }
-
+      
     img:hover { opacity: 0.7; }     >> Opacity is use to make something transparent */
 
-/                         CSS for Table
-    table,
-    th,td { border: 1px solid green; }
-
+//                         CSS for Table
+    table,th,td { border: 1px solid green; }
     table { border-collapse: collapse; width: 100% }   >> Collapse is used to Combined table lines
-
     td, th { text-align: center; padding: 6px;}
 
-/                         CSS for Order List & Unorder list
-    ul {
-      list-style-type: circle; list-style-type: none; margin: 0; padding: 0; }
-
+//                         CSS for Order List & Unorder list
+    ul { list-style-type: circle; list-style-type: none; margin: 0; padding: 0; 
     ol { list-style-type: lower-roman; }
 
   </style>
 </head>
-
 <body>
 
-/                            Box Model
   <div>
     Types of CSS
       1.internal
@@ -235,12 +210,124 @@
       3.Universal
   </div>
 
-/                              Opacity
-  <img
-    src="https://cdn.pixelbin.io/v2/dummy-cloudname/original/erasebg_assets/feature_page/header/Car_BgWidgetImage.png">
+  //                            Box Size Property
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        float: left;
+        width: 33%;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="demo">
+        <div class="box" style="background-color: #bbb">
+          <p>hyy i am sakshi</p>
+        </div>
+        <div class="box" style="background-color: #ccc">
+          <p>hy i am sakshi</p>
+        </div>
+        <div class="box" style="background-color: #bbb">
+          <p>hy i am sakshi</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
 
 
-/                              Table
+//                              Image Size Property
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .demo {
+        width: 30%;
+        float: left;
+        padding: 1%;
+        opacity: 0.3;
+      }
+      .demo:hover {
+        opacity: 0.7;
+        transition: 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="demo">
+        <img src="flower.jpeg" width="100%" />
+      </div>
+      <div class="demo">
+        <img src="flower.jpeg" width="100%" />
+      </div>
+      <div class="demo">
+        <img src="flower.jpeg" width="100%" />
+      </div>
+    </div>
+  </body>
+</html>
+
+//                              Opacity  >> It Transparent/ Fade an image or an object
+
+//                              Navbar
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0%;
+        padding: 0%;
+        background-color: black;
+        overflow: hidden;
+      }
+      li {
+        float: left;
+      }
+      a {
+        display: block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+      }
+      a:hover:not(.active) {
+        background-color: red;
+      }
+      .active {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="">Signup</a></li>
+        <li><a href="">Signin</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
+
+//                              Table
   <table>
     <tr>
       <th>Name</th>
@@ -268,7 +355,7 @@
     </tr>
   </table>
 
-/                     Order & Unorder List               
+//                              Order & Unorder List 
   <ul>
     <li>home</li>
     <li>home</li>
@@ -279,11 +366,451 @@
     <li>home</li>
     <li>home</li>
   </ol>
-
 </body>
-
 </html>
 
+//                              Java Script (JS)
+js : developed by Brenden Eich in 1996
+Java : developed by James Gosling in 1995
+
+js = js is a programming language and also a Scripting language
+programming language = Communication bw user and machine
+Scripting language = It execute the code line by line and work as a interpreter
+
+//                              Versions
+Versions = ES1.................ES8 
+ES1.....ES6 : javascript 
+ES7-ES8 : React
+ES = ECMA script 
+ECMA = European Computer Manufacturers Association
+
+//                              keywords
+keywords = predefine words or reserve words 
+Toat = 60+ keywords , Useable = 35 keywords like if, else, try, for , while etc.  
+
+//                              Data Types
+Data type : in which type of our data . 
+1. primitive data type : predefine 
+2. non-primitive : userdefine     for ex. >> object 
+
+//                              variable
+1. var 2. let 3. const 
+
+//                    There are 3 ways to show content in the browser
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.write("hyy");
+      alert("hello");
+      console.log("hiiiiiiii");
+    </script>
+  </body>
+</html>
+
+//                              Operators
+operator : perform a operation b/w two or more variable's 
+  5 Types of Operators
+1. Arithmatic(+,-,*,/,%)
+2. Realtional(>,<,>=,<=,==,===,!=)
+3. logical(&&,||,!)
+4. Assignment(+=,-=,*=,/=)
+5. Bitwise(~,&&,||) 
+
+
+1. Arithmatic(+,-,*,/,%)
+      // var a = 10;
+      // var b = 12;
+      // document.write("addition is", a + b, "<br>");
+      // document.write("sub is", a - b, "<br>");
+      // document.write("multi is", a * b, "<br>");
+      // document.write("divi is", a / b, "<br>");
+      // document.write("mod is", a % b, "<br>");
+
+      // how to take input from user
+      // var a = parseInt(prompt("enter the value of a"));
+      // var b = parseInt(prompt("enter the value of b"));
+      // document.write("addition is", a + b, "<br>");
+      // document.write("sub is", a - b, "<br>");
+      // document.write("multi is", a * b, "<br>");
+      // document.write("divi is", a / b, "<br>");
+      // document.write("mod is", a % b, "<br>");
+
+      // si = p*r*t/100
+
+      // var p = parseInt(prompt("enter the p"));
+      // var r = parseInt(prompt("enter the r"));
+      // var t = parseInt(prompt("enter the t"));
+      // var si = (p * r * t) / 100;
+      // document.write("si is", si);
+
+      //  aoc = pi*r*r
+      // var pi = 3.14;
+      // var r = parseInt(prompt("enter the r"));
+      // var aoc = pi * r * r;
+      // document.write("aoc is", aoc); 
+
+
+2.   Relational operator : (>,<,>=,<=,==,===,!=)
+
+      we can't use realtional operator directly , we have to use controll or conditional statement to use realtional operator
+      controll or conditional statement : with the help of controll statement , we can controll the flow of programm 
+
+      2 types of Relational operator
+      1. if else
+      2. 
+
+//                              loop
+      1. for loop   
+      2. while loop 
+      3. do while loop 
+      4. for in loop 
+      5. for of loop
+
+//                              if else
+      1. simple if  
+      2. if else  
+      3. if, else if, else  
+      4. nested if else
+
+  1. simple if Syntax
+       if(condition){
+         true statement
+        }
+
+      WAP to print number is greater
+       var n = parseInt(prompt("enter the number"));
+       if (n > 0) {
+         document.write("number is greater");
+       }
+
+  2. if else Syntax
+       if(condition){
+         true statement
+       }
+       else{
+         false statement
+       }
+
+      WAP to check number is greater or less
+
+       var n = parseInt(prompt("enter the number"));
+       if (n > 0) {
+         document.write("number is greater");
+       } else {
+         document.write("number is less");
+       }
+
+  3. if, else-if, else Syntax
+    if (condition) {
+      true statement
+  } else if (condition) {
+      true statement
+  } else {
+      false statement
+  }
+
+      WAP to check number is greater or less
+
+       var n = parseInt(prompt("enter the number"));
+       if (n > 0) {
+         document.write("number is Positive");
+       } else if(n<0){
+         document.write("number is Negative");
+       } else {
+         document.write("Enter Correct No.");
+       }
+
+  4. Nested if else Syntax
+
+//    4 Numbers using nested if else
+
+      var a = parseInt(prompt("enter the number"));
+      var b = parseInt(prompt("enter the number"));
+      var c = parseInt(prompt("enter the number"));
+      var d = parseInt(prompt("enter the number"));
+
+      if (a > b) {
+        if (a > c) {
+          if (a > d) {
+            document.write("a is greater");
+          } else {
+            document.write("d is greater");
+          }
+        } else {
+          document.write("c is greater");
+        }
+      } else if (b > c) {
+        if (b > d) {
+          document.write("b is greater");
+        } else {
+          document.write("c is greater");
+        }
+      } else if (c > d) {
+        document.write("c is greater");
+      } else {
+        document.write("d is greater");
+      }
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//                              Array   >>  Array is the collection of similar type of datatype
+   Indexing 
+        var arr = [10, 25, 69, 87, 35]
+            +ve =   0,  1,  2,  3,  4
+            -ve =  -5, -4, -3, -2, -1
+
+      >> Can be defined in 3 ways
+         1. By Array Literal
+            var arr = [10,25,69,87,35]
+            console.log(arr)
+            document.write(arr);
+
+         2. By Array Object
+            var arr = new Array(10, 25, 69, 87, 35);
+            document.write(arr);
+
+         3. By creating instance of Object Directly
+            var arr = new Array();
+            arr[0] = "k";
+            arr[1] = "l";
+            arr[2] = "m";
+            for (var i = 0; i < arr.length; i++) {
+              document.write(arr[i]);
+            }
+
+//                               Questions
+1.  // wap to find Even no. from array
+  var arr = [10, 55, 43, 64, 22, 45, 72];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0) {
+      document.write(arr[i], "<br>");
+    }
+  }
+
+2.  // wap to find odd no. from array
+  var arr = [10, 55, 43, 64, 22, 45, 72];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 1) {
+      document.write(arr[i], "<br>");
+    }
+  }
+        
+3.  // wap to print Sum of no. from array
+  var arr = [10, 55, 43, 64, 22, 45, 72];
+  sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i]) {
+      sum = sum+arr[i]
+    }
+  }
+  document.write(sum);  
+  
+4.  // wap to print sum of Even no. from array
+  var arr = [10, 55, 43, 64, 22, 45, 72];
+  sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0) {
+      sum = sum + arr[i];
+    }
+  }
+  document.write(sum);
+
+5.  // wap to print sum of odd no. from array
+  var arr = [10, 55, 43, 64, 22, 45, 72];
+  sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 1) {
+      sum = sum + arr[i];
+    }
+  }
+  document.write(sum);
+
+6.  // wap to print Maximum no. in the array
+  var arr = [10, 55, 43, 6, 64, 22, 45, 72];
+  max = arr[0];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  document.write(max);
+
+7.  // wap to print Minimum no. in the array
+  var arr = [10, 55, 43, 6, 64, 22, 45, 72];
+  min = arr[0];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  document.write(min);
+
+//                               Methods of Array
+//                 push >> Insert the element at the end (Last element)
+  var arr = [1, 2, 3, 4, 5, 6];
+  arr.push(7);
+  document.write(arr);
+  
+//                 Pop >> Remove the element from End (Last element)
+    arr.pop(); 
+
+//                 Shift >> Remove the element from Starting (first element)
+    arr.shift();
+
+//                 UnShift >> Insert the element from Starting (first element)
+    arr.unshift(0);
+
+//                 Concat >> It Joins two or more strings. Does not change the existing strings.
+//                           Method returns a new string.
+  var arr1 = [1, 2, 3, 4, 5, 6];
+  var arr2 = [7];
+  var arr3 = [8];
+  arr = arr1.concat(arr2, arr3);
+  document.write(arr);
+
+//                 copyWithin >> Copies a part of the array, and paste to another location within the same array.
+  var arr = [1, 2, 3, 4, 5, 6];
+  arr.copyWithin(2);
+  document.write(arr);
+
+//                 Filter      >> Remove
+//                 Clat        >> Remove
+//                 FlatMap     >> Remove
+//                 ForEach     >> Remove
+//                 IndexOf     >> Remove
+//                 lastIndexOf >> Remove
+//                 map         >> Remove
+//                 reduce      >> Remove
+//                 reduceRight >> Remove
+//                 sort        >> Remove
+//                 splice      >> Remove
+
+
+//                              String   >>  String is a collection of charater or combination of words.
+
+String can be define in 2 ways
+
+1. String literal
+var str = "hi i am suyash"
+document.write(str)
+
+
+2. String object
+var str = new String "hi i am suyash"
+document.write(str)
+
+
+//                               Methods of String
+
+//                 Length >> It show the total length of a string
+
+  var str = "Suyash";
+  for (i = 0; i < str.length; i++) {
+  }
+  document.write(i);     >> 6
+
+  //                 Slice(start, end) >> To cut a string into pices, End is not included
+  var str = "Suyash";
+  slice = str.slice(0,3)
+  document.write(slice);     >> Suy
+  
+//                 substring(start, end) >> Similar to Slice but Negative values are treated as 0
+  var str = "Suyash";
+  Sub = str.substring(0, 4);
+  document.write(Sub);  >> Suya
+  
+//                 substr >> Extracts length characters from start position.
+  var str = "Suyash";
+  Sub = str.substr(0, 3);
+  document.write(Sub);     
+  
+//                 Replace(search, replacement) >> To Replace / Exchange a string of first match
+var str = " hi buddy, welcome to mumbai";
+rep = str.replace("buddy", "suyash")
+document.write(rep);     >> hi suyash, welcome to mumbai
+
+//                 Replace(search, replacement) >> To Replace / Exchange a string of first match
+var str = " hi buddy, welcome to mumbai buddy";
+rep = str.replaceAll("buddy", "suyash")
+document.write(rep);     >> hi suyash, welcome to mumbai suyash
+
+//                 Upper Case >> To convert string into UpperCase
+  var str = "SuYash";
+  UpperCase = str.toUpperCase();     >> (It uses Camel Case)
+  document.write(UpperCase);     >> SUYASH
+    
+//                 Lower Case >> To convert string into LowerCase
+  var str = "SuYash";
+  LowerCase = str.toLowerCase();
+  document.write(LowerCase);     >> suyash
+
+//                 Concat >> It Joins two or more strings. Does not change the existing strings.
+//                           Method returns a new string.
+  var arr1 = [1, 2, 3, 4, 5, 6];
+  var arr2 = [7];
+  var arr3 = [8];
+  arr = arr1.concat(arr2, arr3);
+  document.write(arr);    >> 1,2,3,4,5,6,7,8
+
+//                 trim >> Removes whitespace from both ends.
+ var text = "       Hello World!        ";
+  result = text.trim();
+  console.log(result);  >> Hello World!
+
+//                 trimStart / trimLeft >> Removes whitespace from start.
+  var text = "       Hello World!        ";
+  result = text.trimStart();
+  console.log(result);  >> Hello World!        
+
+//                 trimEnd / trimRight  >> Removes whitespace from End.
+  var text = "       Hello World!        ";
+  result = text.trimEnd();
+  console.log(result);  >>        Hello World!
+
+//                 padStart(length, padString) >> Pads at the start until desired length.
+  var text = "5";
+  result = text.padStart(5,6);
+  console.log(result);  >>  66665
+
+//                 padEnd(length, padString) >> Pads at the end.
+  var text = "5";
+  result = text.padEnd(5,6);
+  console.log(result);  >>  56666
+
+//                 charAt(Index) >> Returns the character at index.
+  var text = "suyash";
+  result = text.charAt(2);
+  console.log(result);  >> y
+
+//                 charCodeAt(Indexing) >> Returns UTF-16 code of the character.
+  var text = "suyash";
+  result = text.charCodeAt(2);
+  console.log(result);  >> 121
+
+//                 split >> Splits string into an array.
+  var text = "Suyash,Aarti";
+  result = text.split(",");
+  console.log(result);  >> ['Suyash', 'Aarti']
 
 
 
@@ -329,11 +856,5 @@
 
 
 
-
-
-
-
-
-
-
+    </script>
 -->
